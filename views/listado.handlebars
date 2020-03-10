@@ -1,0 +1,32 @@
+<div class="col-mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <div class="col-4 mx-auto">
+            <a href="/formulario" class="btn btn-primary">Agregar Estado</a>
+            </div>
+            <h2>Estado de Animo</h2>
+            <table class="table">
+                <tr>
+                    <th>Estado</th>                
+                    <th>Comentario</th>
+                    <th>Opciones</th>
+                </tr>
+
+                {{#each listado}}
+
+                <tr>
+                    <td>{{this.estado}}</td>
+                    <td>{{this.text}}</td>
+
+                    <td>
+                        <a href="/borrar/{{this._id}}">Borrar</a>
+                        <a href="/editar/{{this._id}}">Editar</a>
+                    </td>
+                </tr>
+
+                {{/each}}
+
+            </table>
+        </div>
+    </div>
+</div>

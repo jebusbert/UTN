@@ -1,0 +1,26 @@
+
+<form method="post">
+
+  <div class="col-mx-auto">
+    <div class="card">
+      <div class="card-header">
+        <label for="exampleFormControlSelect1">Seleccionar Estado</label>
+        <select name="estado" class="form-control">
+          <option>Malo</option>
+          <option>Regular</option>
+          <option>Bueno</option>
+        </select>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Escribir Nota</label>
+          <textarea name="text"  value="{{datos.text}}""{{error}}" 
+          class="form-control" rows="3" placeholder="El campo es obligatorio"></textarea>
+        </div>
+        <button class="btn-primary btn-block" type="submit">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</form>
